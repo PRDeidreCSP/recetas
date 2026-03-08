@@ -1,11 +1,13 @@
 from datetime import date 
-from tipo_comida import TipoComida
-from ingrediente import Ingrediente
+#from tipo_comida import TipoComida
+#from ingrediente import Ingrediente
+from recetas.tipo_comida import TipoComida
+from recetas.ingrediente import Ingrediente
 
 #nombre clase
 
 class Plato:
-    def __init__(self,nome:str , data:date, tipo:TipoComida, tempada:str, preparación:str, foto:str):
+    def __init__(self,nome:str , data:date, tipo:TipoComida, tempada:str, preparacion:str, foto:str):
         self._nome = nome
         self._data = data
         self._tipo = tipo
